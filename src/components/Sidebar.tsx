@@ -67,7 +67,7 @@ const Sidebar: React.FC<SidebarProps> = ({onSubscribe})=>{
 
       {/* 社交链接（信任元素） */}
       <section className={styles.widget}>
-        <h3>关注我</h3>
+        <h3>关注我，点我有惊喜</h3>
         <ul className={styles.socialLinks}>
           <li><a href="https://github.com/GAO190" aria-label="GitHub">GitHub</a></li>
           {/* <li><a href="https://www.nike.com" aria-label="NIKE">NIKE</a></li>
