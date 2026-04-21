@@ -1,30 +1,45 @@
+/* --- 头部容器样式（保持不变） --- */
 .header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 30px 20px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* 移动端适配（保持不变） */
+@media (max-width: 768px) {
   .header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    letter-spacing: -0.5px;
+    font-size: 2rem;
   }
-  
   .header p {
-    font-size: 1.2rem;
-    opacity: 0.9;
+    font-size: 1rem;
   }
-  
-  /* 移动端微调 */
-  @media (max-width: 768px) {
-    .header h1 {
-      font-size: 2rem;
-    }
-    .header p {
-      font-size: 1rem;
-    }
-  }
-  
+}
+
+.themeButton {
+  padding: 10px 22px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  backdrop-filter: blur(10px);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 12px;
+}
+.themeButton:hover {
+  background: rgba(255,255,255,0.25);
+}

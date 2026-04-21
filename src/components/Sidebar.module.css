@@ -112,3 +112,51 @@
       gap: 15px;
     }
   }
+/* 合作伙伴整体容器 */
+.partners {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 两个合作伙伴之间的间距 */
+}
+
+/* 单个合作伙伴项 */
+.partnerItem {
+  width: 100%;
+}
+
+/* 链接容器：图片和文字居中对齐 */
+.partnerLink {
+  display: flex;
+  flex-direction: column; /* 图片在上，文字在下 */
+  align-items: center; /* 水平居中 */
+  gap: 8px; /* 图片和文字之间的间距 */
+  text-decoration: none;
+  color: inherit;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+/* 鼠标悬停效果，增强交互感 */
+.partnerLink:hover {
+  background-color: #f8f8f8;
+}
+
+/* Logo 样式：统一大小，防止变形 */
+.partnerLogo {
+  width: 100%;
+  max-width: 280px; /* 限制图片最大宽度 */
+  height: auto;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+/* 文字样式：统一字体和大小 */
+.partnerName {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}

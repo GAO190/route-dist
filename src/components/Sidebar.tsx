@@ -89,15 +89,39 @@ const Sidebar: React.FC<SidebarProps> = ({onSubscribe})=>{
 
 
       {/* 合作伙伴 logo（社交证明） */}
-      <section className={styles.widget}>
-        <h3>合作伙伴</h3>
-        <div className={styles.partners}>
-          <img src={nikepng} alt="Partner 1" />
-          <li><a href="https://www.nike.com" aria-label="NIKE">NIKE</a></li>
-          <img src={djipng} alt="Partner 2" />
-          <li><a href="https://www.dji.com" aria-label="DJI">DJI</a></li>
-        </div>
-      </section>
+ {/* 合作伙伴 logo（社交证明） */}
+<section className={styles.widget}>
+  <h3>合作伙伴</h3>
+  <ul className={styles.partners}>
+    {/* 合作伙伴 1：Nike */}
+    <li className={styles.partnerItem}>
+      <a 
+        href="https://www.nike.com" 
+        aria-label="前往 Nike 官网"
+        target="_blank" 
+        rel="noopener noreferrer"
+        className={styles.partnerLink}
+      >
+        <img src={nikepng} alt="Nike Logo" className={styles.partnerLogo} />
+        <span className={styles.partnerName}>NIKE</span>
+      </a>
+    </li>
+
+    {/* 合作伙伴 2：DJI 大疆 */}
+    <li className={styles.partnerItem}>
+      <a 
+        href="https://www.dji.com" 
+        aria-label="前往 DJI 大疆官网"
+        target="_blank" 
+        rel="noopener noreferrer"
+        className={styles.partnerLink}
+      >
+        <img src={djipng} alt="DJI Logo" className={styles.partnerLogo} />
+        <span className={styles.partnerName}>DJI</span>
+      </a>
+    </li>
+  </ul>
+</section>
     </aside>
   );
 };
