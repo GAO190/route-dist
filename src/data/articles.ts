@@ -36,7 +36,7 @@ export interface Article {
         id: 3,
         title: "React入门",
         date: "2030-08-15",
-        author: "gzy",
+        author: "张三",
         contentSections: [
           {
             title: "什么是Grid布局？",

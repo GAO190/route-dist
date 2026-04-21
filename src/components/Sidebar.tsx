@@ -50,11 +50,11 @@ const Sidebar: React.FC<SidebarProps> = ({onSubscribe})=>{
         <h3>关于作者</h3>
         <div className={styles.authorInfo}>
           <img
-            src="https://wx4.sinaimg.cn/mw690/006xF7FUly1huucaowjryj30u00u0q4f.jpg"
+            src="https://avatars.githubusercontent.com/u/267611191?u=d66d37f202afac60cbb710858c9a0b4123fba8cb&v=4&size=64"
             alt="mpx"
             className={styles.avatar}
           />
-          <p>mpx，大学生，热爱分享技术。拥有5年一线大厂经验，目前专注于前端工程化与性能优化。</p>
+          <p>大家一起学习，热爱分享技术。拥有5年一线大厂经验，目前专注于前端工程化与性能优化。</p>
         </div>
       </section>
 
@@ -69,9 +69,9 @@ const Sidebar: React.FC<SidebarProps> = ({onSubscribe})=>{
       <section className={styles.widget}>
         <h3>关注我</h3>
         <ul className={styles.socialLinks}>
-          <li><a href="#" aria-label="GitHub">GitHub</a></li>
-          <li><a href="#" aria-label="Twitter">Twitter</a></li>
-          <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="https://github.com/GAO190" aria-label="GitHub">GitHub</a></li>
+          {/* <li><a href="https://www.nike.com" aria-label="NIKE">NIKE</a></li>
+          <li><a href="https://www.dji.com" aria-label="DJI">DJI</a></li> */}
         </ul>
       </section>
 
@@ -93,7 +93,9 @@ const Sidebar: React.FC<SidebarProps> = ({onSubscribe})=>{
         <h3>合作伙伴</h3>
         <div className={styles.partners}>
           <img src={nikepng} alt="Partner 1" />
+          <li><a href="https://www.nike.com" aria-label="NIKE">NIKE</a></li>
           <img src={djipng} alt="Partner 2" />
+          <li><a href="https://www.dji.com" aria-label="DJI">DJI</a></li>
         </div>
       </section>
     </aside>
